@@ -24,7 +24,7 @@ let addMovie = () => {
     const movie = new Movie(title, rating, haveWatched);
     allMovies.push(movie);
     document.write("A new movie is added");
-    document.write("---------------- <br>");
+    document.write("----------------");
 }
 
 // Log all movies to the console and display them on the web page
@@ -38,7 +38,7 @@ let printMovies = () => {
         movieList.appendChild(movieElement);
     }
     document.write("You have " + allMovies.length + " movies in total");
-    document.write("---------------- <br>");
+    document.write("----------------");
 }
 
 
@@ -65,10 +65,10 @@ let changeWatched = () => {
     if (movie) {
         movie.haveWatched = !movie.haveWatched;
         document.write("The status of the movie has been changed");
-        document.write("---------------- <br>");
+        document.write("----------------");
     } else {
         document.write("The movie was not found");
-        document.write("---------------- <br>");
+        document.write("----------------");
     }
 }
 
