@@ -51,6 +51,7 @@ let highRatings = () => {
     const movieList = document.querySelector('.movie-list');
     movieList.innerHTML = '';
     for (const movie of hRMovies) {
+        document.write(movie.title + "has a rating of " + movie.rating);
         const movieElement = createMovieElement(movie);
         movieList.appendChild(movieElement);
     }
