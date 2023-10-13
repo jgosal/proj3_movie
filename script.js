@@ -47,7 +47,6 @@ let highRatings = () => {
     const rating = parseFloat(prompt("Enter the minimum rating:"));
     document.write("Printing movies that have a rating higher than " + rating);
     const hRMovies = allMovies.filter(movie => movie.rating > rating);
-    document.write("In total, there are " + hRMovies.length + " matches");
     const movieList = document.querySelector('.movie-list');
     movieList.innerHTML = '';
     for (const movie of hRMovies) {
@@ -55,6 +54,7 @@ let highRatings = () => {
         const movieElement = createMovieElement(movie);
         movieList.appendChild(movieElement);
     }
+    document.write("In total, there are " + hRMovies.length + " matches");
 }
 
 // Toggle the 'haveWatched' property of the specified movie 
